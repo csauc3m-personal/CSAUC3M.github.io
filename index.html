@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Computer Science association uc3m</title>
-    <link rel="icon" href="img/icons/mini-logov2.png" type="image/png">
+    <title>Computer Science association uc3m</title><link rel="icon" href="img/icons/mini-logov2.png" type="image/png">
     <style>
         body, h1, p {
             margin: 0;
@@ -22,8 +21,46 @@
             background-color: #0074b7;
             color: #fff;
             padding: 20px;
+	        align-items: center;
+	        height: 140px;
+	        box-sizing: border-box;
         }
-
+	@media (max-width: 830px) {
+   		header img {
+		   display: none
+		}
+	}
+	
+	@media (min-width: 830px) {
+   		header img {
+		    left: 20px;
+	    	position: absolute;
+		}
+	}
+	
+	@media (min-width: 645px) {
+   		header div {
+	     	    margin-left: auto;
+	    	    margin-top: 20px;
+		}
+	}
+	
+	@media (max-width: 645px) {
+		header {
+		    box-sizing: content-box;
+		    height: 70px;
+		    padding-bottom: 10px;
+		}
+     		header div {
+	     	    font-size: 10px;
+		}
+	}
+	
+	header div {
+	     margin-left: auto;
+	     margin-top: 20px;
+	}
+	
         header h1 {
             font-size: 2em;
         }
@@ -32,15 +69,27 @@
             background-color: #333;
         }
 
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
+	nav ul {
+    	    list-style: none;
+    	    padding: 20px;
+    	    vertical-align: middle;
+	    margin: 0;
+	}
+	
 
-        nav li {
-            display: inline;
-            margin: 0 10px;
-        }
+	@media (min-width: 350px) {
+   		nav li {
+            	     display: inline-block;
+            	    margin: 10px;
+        	}
+	}
+	
+	@media (max-width: 350px) {
+   		nav li {
+            	     display: block;
+            	     margin: 10px;
+        	}
+	}
 
         nav a {
             text-decoration: none;
@@ -54,18 +103,24 @@
         }
 
         footer {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-        }
+    	    background-color: #333;
+    	    color: #fff;
+   	    padding: 10px;
+   	    position: absolute;
+   	    bottom: 0;
+    	    width: 100%;
+    	    box-sizing: border-box;
+	}
     </style>
 </head>
 <body>
     <header>
-        <h1>Computer Science association uc3m</h1>
-        <p>Welcome to our association's website</p>
+	<img src="img/icons/chicken-100.png">
+	<div>
+        	<h1>Computer Science association uc3m</h1>
+        	<p>Welcome to our association's website</p>
+	<div>
     </header>
-    
     <nav>
         <ul>
             <li><a href="#">Home</a></li>
@@ -77,12 +132,11 @@
 
     <div class="container">
         <h2>About Us</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan rhoncus massa, nec aliquam nisl.</p>
+        <p>We are the Computer Science Association of Universidad Carlos III de Madrid.</p>
 
         <h2>Upcoming Events</h2>
         <p>Check out our upcoming events and join us in the celebration of our association.</p>
     </div>
-
     <footer>
         &copy; 2023 Computer Science association uc3m
     </footer>
